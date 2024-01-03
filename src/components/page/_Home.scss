@@ -1,0 +1,295 @@
+.home-titulo-mobile,
+.hero-img-container-mobile,
+.hero-carusel-container-mobile,
+.formulario-boton-container-mobile,
+.mobile-nuestros-estampados-section {
+  display: none;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 50px;
+
+  .hero-img-container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: calc(100% - 100px); /* Resta 50px a cada lado */
+    width: 60%;
+    height: 75vh;
+    margin: 0; /* Para centrar el contenedor horizontalmente */
+
+    .hero-lema {
+      text-align: center;
+
+      p {
+        margin: 0;
+        padding: 50px 0;
+        text-transform: uppercase;
+      }
+    }
+
+    .hero-boton-contacto {
+      padding-bottom: 40px;
+      margin: 0 auto;
+
+      button {
+        padding: 10px 50px;
+        background-color: black;
+        color: $botones-amarillo-dorado;
+        font-size: 0.8rem;
+        font-family: $font-family-rubik;
+        border: none;
+        border-radius: 5px;
+      }
+    }
+
+    .hero-titulo {
+      text-align: center;
+      font-weight: 2rem;
+      h1 {
+        font-size: 4rem;
+        text-align: center;
+        margin: 0;
+        line-height: 5rem;
+      }
+    }
+  }
+
+  .logo-whatsapp-container {
+    position: relative;
+    top: -100px;
+    font-size: 50px;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    padding-right: 100px;
+
+    .icono-whatsapp {
+      cursor: pointer;
+    }
+  }
+}
+
+.personalizar-productos-section {
+  .personalizar-productos-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    padding: 50px 0;
+    width: 100%;
+    height: fit-content;
+    width: 70%;
+    margin: auto;
+
+    .personalizar-productos-container-img {
+      border: 1px solid black;
+      margin: 10px auto;
+      display: grid;
+      grid-template-rows: 78% 22%;
+      width: 32vw;
+      height: 36.9vh;
+      border: none;
+
+      button {
+        grid-row: 2;
+        text-align: left;
+        border: none;
+        font-weight: 600;
+        @include propiedades-botones-productos-personalizados(
+          $botones-amarillo-dorado,
+          0.83% 2.2%,
+          $font-size-botones-productos-personalizados,
+          $font-family-project
+        );
+        border-radius: 5px;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      .personalizar-productos-vacio {
+        grid-row: 1;
+      }
+      .indumentaria-escolar-card {
+        background-image: url("./assets/img/indumentaria-escolar-card.png");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .indumentaria-deportiva-card {
+        background-image: url("./assets/img/indumentaria-deportiva-card.png");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .indumentaria-laboral-card {
+        background-image: url("./assets/img/indumentaria-laboral.png");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .objetos-personalizados-card {
+        background-image: url("./assets/img/objetos-personalizados.png");
+        background-position: center;
+        background-repeat: none;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+    }
+    .indumentaria-escolar {
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .indumentaria-deportiva {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .indumentaria-laboral {
+      grid-column: 1;
+
+      grid-row: 2;
+    }
+    .objetos-personalizados {
+      grid-column: 2;
+      grid-row: 2;
+    }
+  }
+}
+.formulario-section {
+  padding-bottom: 100px;
+  width: 68%;
+  margin: 0 auto;
+  .form-info {
+    margin-bottom: 2rem;
+  }
+}
+
+.home-titulos {
+  h2 {
+    color: black;
+    font-size: 35px;
+    text-align: center;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .hero-section {
+    .hero-img-container {
+      width: 100%;
+      padding: 60px 0 0;
+      height: 70vh;
+      .hero-titulo {
+        text-align: center;
+
+        h1 {
+          font-size: 2.5rem;
+          text-align: center;
+          width: 90%;
+          margin: auto;
+          line-height: 3rem;
+        }
+      }
+      .hero-boton-contacto {
+        padding-bottom: 0;
+        width: 90%;
+
+        button {
+          padding: 10px 60px;
+          font-size: 0.8rem;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .mobile-nuestros-estampados-section {
+    display: block;
+  }
+  .personalizar-productos-section {
+    .personalizar-productos-container {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 0;
+
+      .personalizar-productos-container-img {
+        width: 100%;
+
+        button {
+          text-align: center;
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+
+  .home-titulos {
+    h2 {
+      color: black;
+      font-size: 25px;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+  }
+  .productos-personalizados-titulo {
+    display: flex;
+    justify-content: center;
+    h2 {
+      color: black;
+      font-size: 25px;
+      text-align: center;
+      padding: 20px 0;
+      width: 50%;
+    }
+  }
+
+  .redes-section {
+    .iconos-redes-container {
+      img {
+        width: 15vw;
+        height: 15vw;
+      }
+    }
+  }
+
+  .info-tienda-container {
+  
+    .info-tienda-hexagonosFila1 {
+      display: flex;
+      width: 61vw;
+      justify-content: space-around;
+      margin-top: 8.5vw;
+    }
+    .info-tienda-hexagonosFila2 {
+      margin-top: 8.5vw;
+      display: flex;
+      width: 61vw;
+      justify-content: space-around;
+    }
+  }
+}

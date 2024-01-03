@@ -1,0 +1,67 @@
+/*UTILIDADES*/
+@import "~bootstrap/scss/bootstrap";
+@import "./utils/Reset";
+@import "./utils/Mixin-Extend";
+@import "./utils/Typography";
+$color-primary: #efb322;
+$color-secundary: #040404;
+$color-tertiary: #f8f8f8;
+$color-quaternary: #cecdbb;
+$botones-amarillo-dorado: #e7bb43;
+$Hero-gris: #d9d9d9;
+$negro: #000000;
+$inputs-formulario-gris: #cecdbb;
+* {
+  font-family: $font-family-project;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  color: $color-secundary;
+}
+body {
+  background-color: $color-tertiary;
+  font-size: 1.2rem;
+}
+*.particles-cont {
+  position: absolute;
+  top: 0;
+  z-index: -50;
+  canvas {
+    z-index: -50 !important;
+  }
+}
+
+/*COMPONENTES*/
+@import "./components/hexagon/HexagonImg";
+@import "./components/hexagon/HexagonVacio";
+@import "./components/navbar/NavbarDesktop";
+@import "./components/navbar/NavbarMobile";
+@import "./components/footer/Footer";
+@import "./components/formulario/Formulario";
+@import "./components/texto/Texto";
+@import "./components/productSection/Section";
+@import "./components/productSection/SectionElement";
+@import "./components/modelo-hexagono/ModeloHeagono";
+@import "./components/overlayAnimation/OverlayAnimation";
+@import "./components/productSection/Section";
+@import "./components/productSection/SectionElement";
+@import "./components/pedidoCompra/PedidoCompra";
+@import "./components/seccionHexagonosNuestrosEstampados/HegaxonosSeccionNuestrosEstampados";
+@import "./components/seccionEstampados/SeccionEstampados";
+@import "./components/carusel-imagenes/CaruselList";
+@import "./components/counter/Counter";
+
+/*PAGES*/
+@import "./components/page/Body";
+@import "./components/page/Home";
+@import "./components/page/Nosotros";
+@import "./components/page/Productos";
+@import "./components/page/Contacto";
+@import "./components/page/Ayuda";
+@import "./components/page/SeccionesDeAyuda";
+@import "./components/creadorDeSecciones/EstilosDeSeccionesCreadas";
+@import "./components/page/GuiaDeTalles";
+@import "./components/page/Checkout";

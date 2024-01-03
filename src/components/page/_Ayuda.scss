@@ -1,0 +1,46 @@
+.ayuda-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px auto;
+  height: 100vh;
+  padding-top: 5rem;
+  gap: 5rem;
+
+  .titulo-container {
+    h1 {
+      font-size: 3rem;
+      color: black;
+    }
+  }
+
+  .info-tienda-hexagonosFila1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    .ayuda-hex {
+      width: 200px;
+      height: 233px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .ayuda-container {
+    .info-tienda-hexagonosFila1 {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 300px;
+
+      .ayuda-hex {
+        width: 140px;
+        height: 163px;
+        text-align: center;
+      }
+      .hex-cont-active {
+        transform: translateY(-2.5rem);
+      }
+    }
+  }
+}

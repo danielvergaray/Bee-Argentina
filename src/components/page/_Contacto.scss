@@ -1,0 +1,13 @@
+.contacto {
+  width: 75%;
+  padding: 3rem 0px;
+  margin: 0px auto;
+  .form-info {
+    padding-bottom: 3rem;
+  }
+}
+@media (max-width: 768px) {
+  .contacto {
+    width: 95%;
+  }
+}

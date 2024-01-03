@@ -1,0 +1,64 @@
+.sectionhex-title {
+  padding: 2rem 0px 0px;
+  width: 100%;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+.desktop-sectionhex {
+  padding: 0px 0px 2rem;
+  .hexoArbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .rama {
+      display: flex;
+      gap: 1rem;
+      .heximg-cont {
+        width: 270px;
+        height: 303px;
+      }
+    }
+  }
+}
+.mobile-sectionhex {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .desktop-sectionhex {
+    display: none;
+  }
+  .mobile-sectionhex {
+    display: unset;
+    padding: 0px 0px 2rem;
+    .hexoArbol {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      .rama {
+        display: flex;
+        gap: 1rem;
+        .heximg-cont {
+          width: 270px;
+          height: 303px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .mobile-sectionhex {
+    padding: 0px 0px 2rem;
+    .hexoArbol {
+      .rama {
+        gap: 0.5rem;
+        .heximg-cont {
+          width: 150px;
+          height: 183px;
+        }
+      }
+    }
+  }
+}
